@@ -1,7 +1,7 @@
 import json
 ficheiro = input()
 try:
-    with open(ficheiro) as filho:
+    with open(ficheiro, encoding='UTF8') as filho:
         texto = json.load(filho)
         print(texto)
 except:
